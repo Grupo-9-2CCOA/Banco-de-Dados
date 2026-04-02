@@ -12,6 +12,7 @@ CREATE TABLE cliente (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     cpf VARCHAR(11) NOT NULL UNIQUE,
+    isAtivo BOOLEAN DEFAULT TRUE,
     telefone VARCHAR(11)
 );
 
