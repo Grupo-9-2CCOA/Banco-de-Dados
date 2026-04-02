@@ -60,6 +60,8 @@ CREATE TABLE historico_pedido (
 	status_entrega INT NOT NULL,
     status_pagamento INT NOT NULL,
 	data_modificacao DATE,
+	status_pagamento INT NOT NULL,
+	data_modificacao DATE,
 	PRIMARY KEY (id, id_pedido, id_cliente),
     FOREIGN KEY (id_pedido) REFERENCES pedido(id),
 	FOREIGN KEY (id_cliente) REFERENCES pedido(id_cliente),
