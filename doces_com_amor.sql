@@ -12,7 +12,7 @@ CREATE TABLE cliente (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
     cpf VARCHAR(11) NOT NULL UNIQUE,
-    isAtivo BOOLEAN DEFAULT TRUE,
+    is_ativo BOOLEAN DEFAULT TRUE,
     telefone VARCHAR(11)
 );
 
@@ -45,7 +45,7 @@ CREATE TABLE pedido (
     valor DECIMAL(10,2) NOT NULL,
 	status_entrega INT NOT NULL,
     status_pagamento INT NOT NULL,
-	isAtivo BOOLEAN DEFAULT TRUE,
+	is_ativo BOOLEAN DEFAULT TRUE,
     data_pedido DATETIME,
     data_modificacao DATETIME,
     data_criacao DATETIME,
