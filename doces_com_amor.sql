@@ -45,6 +45,7 @@ CREATE TABLE pedido (
     valor DECIMAL(10,2) NOT NULL,
 	status_entrega INT NOT NULL,
     status_pagamento INT NOT NULL,
+	isAtivo BOOLEAN DEFAULT TRUE,
     data_pedido DATETIME,
     data_modificacao DATETIME,
     data_criacao DATETIME,
