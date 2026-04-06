@@ -46,6 +46,7 @@ CREATE TABLE pedido (
 	status_entrega INT NOT NULL,
     status_pagamento INT NOT NULL,
 	is_ativo BOOLEAN DEFAULT TRUE,
+	is_reagendado BOOLEAN DEFAULT FALSE,
     data_pedido DATETIME,
     data_modificacao DATETIME,
     data_criacao DATETIME,
