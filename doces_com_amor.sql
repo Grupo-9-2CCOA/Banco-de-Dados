@@ -49,7 +49,7 @@ CREATE TABLE pedido (
 	is_ativo BOOLEAN NOT NULL DEFAULT TRUE,
 	is_reagendado BOOLEAN NOT NULL DEFAULT FALSE,
     data_pedido DATETIME NOT NULL,
-    data_modificacao DATETIME,
+	data_modificacao DATETIME,
     data_criacao DATETIME NOT NULL,
     PRIMARY KEY (id, id_cliente),
     FOREIGN KEY (id_cliente) REFERENCES cliente(id),
@@ -67,7 +67,7 @@ CREATE TABLE historico_pedido (
     data_criacao DATETIME NOT NULL,
 	PRIMARY KEY (id, id_pedido, id_cliente),
     FOREIGN KEY (id_pedido) REFERENCES pedido(id),
-	FOREIGN KEY (id_cliente) REFERENCES pedido(id_cliente),
+	FOREIGN KEY (id_cliente) REFERENCES cliente(id),
 	FOREIGN KEY (status_entrega) REFERENCES entrega(id),
     FOREIGN KEY (status_pagamento) REFERENCES pagamento(id)
 );
