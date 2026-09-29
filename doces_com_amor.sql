@@ -23,6 +23,7 @@ CREATE TABLE endereco (
     numero VARCHAR(30) NOT NULL,
     cep VARCHAR(8) NOT NULL,
     complemento VARCHAR(50),
+	isAtivo boolean NOT NULL,
     id_cliente INT NOT NULL,
     FOREIGN KEY (id_cliente) REFERENCES cliente(id)
 );
