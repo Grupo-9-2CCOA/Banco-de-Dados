@@ -2,13 +2,12 @@ CREATE DATABASE doces_com_amor;
 
 USE doces_com_amor;
 
-CREATE TABLE usuario (
+CREATE TABLE admin (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(60) NOT NULL,
-    username VARCHAR(30) NOT NULL,
-    senha VARCHAR(30) NOT NULL
+    usuario VARCHAR(255) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    troca_senha_obrigatoria BOOLEAN NOT NULL DEFAULT TRUE
 );
-
 CREATE TABLE cliente (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50) NOT NULL,
