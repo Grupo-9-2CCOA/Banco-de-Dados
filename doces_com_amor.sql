@@ -51,6 +51,7 @@ CREATE TABLE pedido (
     data_pedido DATETIME NOT NULL,
 	data_modificacao DATETIME,
     data_criacao DATETIME NOT NULL,
+	evento_google_calendar_id VARCHAR(255) DEFAULT NULL,
     PRIMARY KEY (id, id_cliente),
     FOREIGN KEY (id_cliente) REFERENCES cliente(id),
     FOREIGN KEY (id_endereco) REFERENCES endereco(id),
