@@ -1,7 +1,7 @@
 USE doces_com_amor;
 
 -- =========================================================
--- ADMIN
+-- ADMIN (senha padrão: admin)
 -- =========================================================
 
 INSERT INTO admin(usuario, senha)
