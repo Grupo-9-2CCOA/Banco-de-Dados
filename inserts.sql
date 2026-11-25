@@ -21,7 +21,6 @@ VALUES
 
 -- =========================================================
 -- ENDEREÇOS
--- isAtivo foi adicionado para atender ao schema
 -- =========================================================
 
 INSERT INTO endereco (
@@ -29,7 +28,7 @@ logradouro,
 numero,
 cep,
 complemento,
-isAtivo,
+is_ativo,
 id_cliente
 )
 VALUES
